@@ -1,0 +1,11 @@
+
+@media(max-width: 750px) {
+    .main{
+  
+    min-width: 88vw;
+    max-height: max-content;
+    
+    }   
+};
+
+/*  */
