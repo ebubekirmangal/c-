@@ -1,113 +1,15 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ana sayfa</title>
 </head>
-
-<body
-    style="display: flex;justify-content: center;background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);">
-    <div class="container"
-        style="width: 78%;padding: 20px;background-color: #fefefe; border-radius: 10px;margin-top: 20px;">
-        <h1 style="margin: 0 auto 0 auto;text-align: center;color: rgb(241, 170, 82);"><em>Tobeto "İstanbul Kodluyor"
-                Projesi Html'de Öğrendiklerim &nbsp;<i class="fa-solid fa-info" style="color:#686969; font-size: 16px;" title="Kod yazılış örnekleri için kod sayfası şeklinde açabilirsiniz."></i></em></h1>
-        <hr style="box-shadow: 2px 2px 5px 2px black;">
-        <p>
-            <b>hr:</b> Sayfa içi ayıran uzun çizgi. <br>
-            <b>p:</b> Paragraf için kullanılır. <br>
-            <b>pre:</b> paragrafı yazıldığı gibi aktarmak için kullanılır. <br>
-            <b>br:</b> Boşluk bırakmak için kullanılır. <br>
-            <b>"&nbs.p":</b> Satır içi boşluk bırakmak için kullanılır.Nokta olmadan kullan. <br>
-            <b>h:</b> Başlık oluşturmak için kullanılır,1'den 6 ya kadar değer alır değer büyüdükçe başlık boyutu
-            küçülür.
-            <br>
-            <b>img:</b> Sayfaya resim eklemek için kullanılır Kendi içinde attributeleri vardır src: sayfa konumunu
-            belirtir, alt:
-            resim yüklenirken sıkıntı oluşursa resmin ne olduğunu belirten bir metin koymakta kullanılır. <br>
-            <b>style:</b> Bir attribute'dür css kodları içerir inline css diye geçer.
-
-
-        </p>
-        <hr style="box-shadow: 2px 2px 5px 2px black;">
-        <h3 style="color: rgb(235, 82, 82);"><em>Formatting Elementleri</em></h3>
-        <p>
-            <b>b: Bold, etiket arasında kalan söz veya söz gruplarını kalınlaştırır.(Görsel Amaçlı)</b> <br>
-            <strong>strong: Bold, etiket arasında kalan söz veya söz gruplarını kalınlaştırır.(Vurgu Amaçlı)</strong>
-            <br>
-            <b>i:</b> <i>Görsel olarak eğik yazılmasını sağlar.</i> <br>
-            <b>em:</b> <em> Vurgusal olarak eğik yazılmasını sağlar.</em> <br>
-            <b>small:</b> <small>küçük yazılmasını sağlar</small> <br>
-            <b>mark:</b> <mark>İşaretlenmiş metin</mark> <br>
-            <b>sub,sup:</b> H<sub>2</sub>O<sup>2</sup> &nbsp;&nbsp; alt simge, üst simg
-        </p>
-        <hr style="box-shadow: 2px 2px 5px 2px black;">
-        <h3 style="color: rgb(235, 82, 82);"><em>Quotations-Alıntılar</em></h3>
-        <p>
-            <b>blockquote:</b>
-        <blockquote cite="https://www.google.com/">Alıntı cümleleri belirtmek için kullanılır. Eğer alıntı cümlenin
-            kaynağını vermek istiyorsanız
-            cite attribute ü kullanılır.</blockquote> <br>
-        <b>q: </b> <q>Alıntı cümlelerini tırnak içerisine alır.</q> <br>
-        <b>abbr:</b> Kısaltmaların üstüne gelince açıklamasını belirtmek için kullanılır. exam <abbr
-            title="Ebubekir Mangal">EBM</abbr> <br>
-        <b>address: </b> adres girmek için kullanılır. <br>
-        <b>cite: </b> Bir işi belirtmek için(sanat vb.)için kullanılır. Örneğin <cite>monalisa</cite> <br>
-        <b>bdo: </b> Yazılan metnin sağdan sola mı soldan sağa mı olduğunu belirtir. Bunu kullanabilmek için <q>dir</q>
-        attribute'ü kullanılır. Örnek <bdo dir="rtl">Ebubekir Mangal</bdo> <br>
-
-        </p>
-        <hr style="box-shadow: 2px 2px 5px 2px black;">
-        <h3 style="color: rgb(235, 82, 82);"><em>Links-Bağlantılar</em></h3>
-        <p>
-            <b>a: </b> Link oluştumak için kullanılır. <a href="https://www.google.com/" target="_blank"
-                style="text-decoration: none;background:linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);padding: 20px 5px;border-radius: 50%;color: white;"
-                title="Google Linki">Google</a> <br><br>
-            <b>-</b> target attribute'ü ile sayfanın yeni sekmede mi yoksa aynı sekmede mi açılacağını seçebilirsiniz.
-            Href attribute'ü ile kendi dosyanıza veya bir internet sayfısına ulaşmak için dosya konumu veya sayfa
-            linkini buraya yazıyorsunuz. Href'te mailto: özelliği ile mail atılmak istenen kişinin mailini yazarak
-            kullanılabilir. Title attribute ile linkin üstüne gelince link ile ilgili açıklama çıkar.
-        </p>
-        <hr style="box-shadow: 2px 2px 5px 2px black;">
-        <h3 style="color: rgb(235, 82, 82);"><em>Tables-Tablolar</em></h3>
-        <p>
-            <b>table: </b>Tablonun ana etiketi  <br>
-            <b>thead: </b>Tablo Bsşlıkları bu bölümde olur. th ile başlık içeriği yazılır. <br>
-            <b>tbody: </b>Tablo başlıkları ve özet bilgi hariç her şey bu kısımda bulunur. <br>
-            <b>tfoot: </b>Tablonun son satırıdır, Özet niteliği taşır.<br>
-            <b>tr: </b> Bir satır açmak için kullanılır. <br>
-            <b>td: </b> Bir sütun açmak için kullanılır.<br>
-        </p>
-        <table border="1" style="text-align: center;">
-            <thead>
-                <tr>
-                    <th>Ad</th>
-                    <th>Soyad</th>
-                    <th>Maaş</th>
-                </tr>
-            </thead>
-            <tbody >
-                <tr>
-                    <td>Ebubekir</td>
-                    <td>Mangal</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Yunus E.</td>
-                    <td>Mangal</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Yusuf</td>
-                    <td>Ok</td>
-                    <td>0</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr style="box-shadow: 2px 2px 5px 2px black;">
+<body style="display: flex; justify-content: center;align-items: center;height: 100vh">
+    
+    <div style="display: flex;justify-content: space-around;align-items: center ; width: 50%; height: 20%;">
+        <a href="html.html"><div style="padding: 50px;border: 2px solid black; ">Html Kodları</div></a>
+        <a href="css.html"><div style="padding: 50px;border: 2px solid black;">Css Kodları</div></a>
     </div>
 </body>
-
 </html>
