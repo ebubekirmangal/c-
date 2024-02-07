@@ -16,8 +16,9 @@
                 Projesi Html'de Öğrendiklerim &nbsp;<i class="fa-solid fa-info" style="color:#686969; font-size: 16px;"
                     title="Kod yazılış örnekleri için kod sayfası şeklinde açabilirsiniz."><a
                         href="https://www.instagram.com/ebubekir_mngl/"></i><i class="fa-brands fa-square-instagram"
-                    style="margin-left: 25px; margin-top:5px ;position:absolute;color: #ba83ca;"></i></a></em></h1>
+                    style="margin-left: 25px; margin-top:5px ;position:absolute;color: #a924d1;"></i></a></em></h1>
         <hr style="box-shadow: 2px 2px 5px 2px black;">
+       <span style="border: 1px solid black;padding: 12px;border-radius: 10px;"> <a href="index.html" style="text-decoration: none;"><i class="fa-solid fa-house" style="margin-top: 15px;font-size: 25px;color: #41dfff;" title="Anasayfa"></i>Anasayfa</a></span>
         <p>
             <b>hr:</b> Sayfa içi ayıran uzun çizgi. <br>
             <b>p:</b> Paragraf için kullanılır. <br>
@@ -66,9 +67,10 @@
         <h3 style="color: rgb(235, 82, 82);"><em>Links-Bağlantılar</em></h3>
         <p>
             <b>a: </b> Link oluştumak için kullanılır.
-        <div
+        <a href="https://www.google.com/" style="text-decoration: none; color: white;"><div
             style="width: 70px;height: 70px;background:linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);border-radius: 50%;display: flex; align-items: center;justify-content: center;">
-            <a href="https://www.google.com/" style="text-decoration: none; color: white;">Google</a></div>
+            Google
+        </div></a>
 
         <br>
         <b>-</b> target attribute'ü ile sayfanın yeni sekmede mi yoksa aynı sekmede mi açılacağını seçebilirsiniz.
@@ -154,23 +156,70 @@
             <b>form: </b> Kullanıcıdan veri almak için kullanılır. Bu etiketin içindeki form elementleri <q>data
                 submit</q> yani veri gönderilceği zaman form etiketinin içindeki veriler gönderilir. Tek başına bir işe
             yaramaz. <br>
-            <b>input: </b> kullanıcının veri girişi yapabileceği giriş alanı tanımlar. attribute(parametre)'ü vardır.
-            <br> <br>
-            
-        <form action="">
-            <label for="kim">Adınız</label> <br>
-            <input type="text" id="kim"> <br>
-            <label for="Sname">Soyadınız</label> <br>
-            <input type="text" id="Sname"> <br>
-            <label for="age">Ya;iniz</label> <br>
-            <input type="number" id="age"> <br>
-            <label for="ma'l">Ma'l</label> <br>
-            <input type="email" id="ma'l">
-        </form>
+            <b>input: </b> Kullanıcının veri girişi yapabileceği giriş alanı tanımlar. attribute(parametre)'ü vardır. Type parametresi ile input türünü seçebilirsiniz. Id veta name parametresi ile label ve input arasındaki bağı oluşturursunuz, labeldaki for parametresindeki değerle inputdaki değer aynı ise bağ oluştururlar.Name parametresi her input elementinde bulunması gereken bir parametredir eğer alınan verileri aktarmak için kullanılır. Gönderilen verilerin hangi name altında toplanacağını belirtir. <br>
+            <b>label: </b> İnput başlığı vermek için kullanılır. For parametresi input ile aradaki bağı kurmaya yarar. <br>
+            <b>select: </b> Açılır liste oluşturmak için kullanılır. <br>
+            <b>option: </b> Açılır liste içindeki elemanları oluşturmak için kullanılır. <br>
+            <b>textarea: </b> Büyük metinler için kullanılır. Örneğin Hakkınızda metni oluşturmak için kullanılabilir. Metin satır ve sütun büyüklüğünü cols,rows parametresi ile oluşturabilirsiniz.
+
+        <div style="display: flex;justify-content: space-around; align-items: center;" class="inpututtu">
+
+
+            <div>
+                <form action="">
+                    <label for="kim">Adınız</label> <br>
+                    <input type="text" id="kim" placeholder="exam:Johnny"> <br>
+                    <label for="Sname">Soyadınız</label> <br>
+                    <input type="text" id="Sname" placeholder="exam:Bravo"> <br>
+                    <label for="age">Yaşınız</label> <br>
+                    <input type="number" id="age" min="0"> <br>
+                    <label for="ma'l">Mail</label> <br>
+                    <input type="email" id="ma'l" required placeholder="yazilimci@gmail.com">
+
+            </div>
+
+            <div>
+
+                <input type="checkbox" id="que">
+                <label for="que">Öğrenci misiniz?</label> <br>
+                <input type="checkbox" id="que">
+                <label for="que">Çalışıyor musunuz?</label>
+                <br><br>
+                <label for="team">Takımınız</label> <br>
+                <input type="radio" name="futbol"> Beşiktaş<br>
+                <input type="radio" name="futbol"> Galatasaray <br>
+                <input type="radio" name="futbol"> Çankırı Spor <br>
+                <input type="radio" name="futbol"> Fenerbahçe <br>
+
+
+            </div>
+            <div>
+                <label for="color">Sevdiğiniz Renk</label><br>
+                <select name="" id="color">
+
+<option value="Black">Siyah</option>
+<option value="White">Beyaz</option>
+<option value="Red">Kırmızı</option>
+<option value="Yellow">Sarı</option>
+<option value="DarkBlue">Lacivert</option>
+<option value="ÇingenePink">Çingene pembesi</option>
+                </select> <br> <br>
+
+                <input type="submit"
+                    style="background-color: #5a00f7;border: 0px;padding: 8px;color: white;border-radius: 5px;cursor: pointer;">
+                <input type="reset" value="Sıfırla"
+                    style="background-color: #f70000;border: 0px;padding: 8px;color: white;border-radius: 5px;cursor: pointer; margin-left: 5px;">
+                </form>
+            </div>
+        </div>
         </p>
 
         <hr style="box-shadow: 2px 2px 5px 2px black;">
-
+        <h3 style="color: rgb(235, 82, 82);"><em>Forms Input Attributes- Formlarda Input Parametreleri</em></h3>
+        <p>
+            
+        </p>
+        <hr style="box-shadow: 2px 2px 5px 2px black;">
     </div>
 </body>
 
