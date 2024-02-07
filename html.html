@@ -61,18 +61,20 @@
         <b>bdo: </b> Yazılan metnin sağdan sola mı soldan sağa mı olduğunu belirtir. Bunu kullanabilmek için <q>dir</q>
         attribute'ü kullanılır. Örnek <bdo dir="rtl">Ebubekir Mangal</bdo> <br>
 
-        </p>
+        </p>f
         <hr style="box-shadow: 2px 2px 5px 2px black;">
         <h3 style="color: rgb(235, 82, 82);"><em>Links-Bağlantılar</em></h3>
         <p>
-            <b>a: </b> Link oluştumak için kullanılır. 
-           <div style="width: 70px;height: 70px;background:linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);border-radius: 50%;display: flex; align-items: center;justify-content: center;"><a href="https://www.google.com/" style="text-decoration: none; color: white;">Google</a></div>
-           
-            <br>
-            <b>-</b> target attribute'ü ile sayfanın yeni sekmede mi yoksa aynı sekmede mi açılacağını seçebilirsiniz.
-            Href attribute'ü ile kendi dosyanıza veya bir internet sayfısına ulaşmak için dosya konumu veya sayfa
-            linkini buraya yazıyorsunuz. Href'te mailto: özelliği ile mail atılmak istenen kişinin mailini yazarak
-            kullanılabilir. Title attribute ile linkin üstüne gelince link ile ilgili açıklama çıkar.
+            <b>a: </b> Link oluştumak için kullanılır.
+        <div
+            style="width: 70px;height: 70px;background:linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);border-radius: 50%;display: flex; align-items: center;justify-content: center;">
+            <a href="https://www.google.com/" style="text-decoration: none; color: white;">Google</a></div>
+
+        <br>
+        <b>-</b> target attribute'ü ile sayfanın yeni sekmede mi yoksa aynı sekmede mi açılacağını seçebilirsiniz.
+        Href attribute'ü ile kendi dosyanıza veya bir internet sayfısına ulaşmak için dosya konumu veya sayfa
+        linkini buraya yazıyorsunuz. Href'te mailto: özelliği ile mail atılmak istenen kişinin mailini yazarak
+        kullanılabilir. Title attribute ile linkin üstüne gelince link ile ilgili açıklama çıkar.
         </p>
         <hr style="box-shadow: 2px 2px 5px 2px black;">
         <h3 style="color: rgb(235, 82, 82);"><em>Tables-Tablolar</em></h3>
@@ -149,8 +151,22 @@
         <hr style="box-shadow: 2px 2px 5px 2px black;">
         <h3 style="color: rgb(235, 82, 82);"><em>Form- Form Etiketleri (Input)</em></h3>
         <p>
-
-
+            <b>form: </b> Kullanıcıdan veri almak için kullanılır. Bu etiketin içindeki form elementleri <q>data
+                submit</q> yani veri gönderilceği zaman form etiketinin içindeki veriler gönderilir. Tek başına bir işe
+            yaramaz. <br>
+            <b>input: </b> kullanıcının veri girişi yapabileceği giriş alanı tanımlar. attribute(parametre)'ü vardır.
+            <br> <br>
+            
+        <form action="">
+            <label for="kim">Adınız</label> <br>
+            <input type="text" id="kim"> <br>
+            <label for="Sname">Soyadınız</label> <br>
+            <input type="text" id="Sname"> <br>
+            <label for="age">Ya;iniz</label> <br>
+            <input type="number" id="age"> <br>
+            <label for="ma'l">Ma'l</label> <br>
+            <input type="email" id="ma'l">
+        </form>
         </p>
 
         <hr style="box-shadow: 2px 2px 5px 2px black;">

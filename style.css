@@ -1,4 +1,27 @@
 
+
+.as{
+    text-decoration: none;
+    color: black;
+}
+
+.as:hover{
+   
+    color: white;
+}
+
+.divi{
+    border-radius: 8px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.divi:hover{
+ background-color: black;    
+}
+
+
+
 @media(max-width: 750px) {
     .main{
   
@@ -6,6 +29,11 @@
     max-height: max-content;
     
     }   
+    .divi{
+   
+        padding: 10px 20px;
+        margin-left: 10px;
+       
+    } 
+   
 };
-
-/*  */
