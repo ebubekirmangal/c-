@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Sql Öğrenim</title>
+</head>
+
+<body>
+    <div class="main"
+        style="height: auto; width: 78%;padding: 20px;background-color: #fefefe; border-radius: 10px;margin-top: 10px;">
+        <h1 style="margin: 0 auto 0 auto;text-align: center;color: rgb(241, 170, 82);"><em>Tobeto "İstanbul Kodluyor"
+                Projesi Html'de Öğrendiklerim &nbsp;<i class="fa-solid fa-info" style="color:#686969; font-size: 16px;"
+                    title="Kod yazılış örnekleri için github'dan kodları görüntüleyebilirsiniz."></i></em></h1>
+        <hr style="box-shadow: 2px 2px 5px 2px black;">
+        <span style="border: 1px solid black;padding: 12px;border-radius: 10px;"> <a href="index.html"
+                style="text-decoration: none;"><i class="fa-solid fa-house"
+                    style="margin-top: 15px;font-size: 25px;color: #41dfff;" title="Anasayfa"></i>Anasayfa</a></span>
+        <span style="border: 1px solid black;padding: 12px;border-radius: 10px;"> <a
+                href="https://www.instagram.com/ebubekir_mngl/" style="text-decoration: none;"><i
+                    class="fa-brands fa-square-instagram" style="color: #a924d1;font-size: 25px;"></i>
+                İnstagram</a></span>
+        <hr style="box-shadow: 2px 2px 5px 2px black; margin-top: 25px;">
+        <h3 style="color: rgb(235, 82, 82);"><em>Tables</em></h3>
+        <p>
+            İstediğimiz veriyi ve verinin türünü girdiğimiz ve sonra veriyi istenilen tarzda depolayan bir
+            uygulamadır.(Excel gibi)
+        </p>
+        <h3 style="color: rgb(235, 82, 82);"><em>Backup, Restore ve Attach, Detach İşlemleri</em></h3>
+        <p>
+            <b>Backup: </b> Veritabanlarınızı korumanın ve veri kaybını önlemenin önemli bir yoludur. <br>
+            <b>Restore: </b> Önceden yedeklenmiş verilerin geri yüklenmesini ifade eder. Veri kaybını önlemek ve iş
+            sürekliliğini sağlamak için yapılan yedekleme işlemi sonucunda oluşturulan veri kopyası, "restore" işlemi
+            ile veri tabanına geri dönüştürülür. <br>
+            <b>Attach: </b> Bir veritabanının SQL Server örneğine eklenmesini sağlar. Bu işlem, bir veritabanının var
+            olan bir SQL Server örneğine yüklenmesini ve kullanılabilir hale getirilmesini sağlar. <br>
+            <b>Detach: </b> Bir SQL Server veritabanının mevcut örneğinden kaldırılmasını sağlar. Bu işlem, veritabanını
+            SQL Server örneğinden ayırarak veritabanını kullanılamaz hale getirir.
+        </p>
+        <h3 style="color: rgb(235, 82, 82);"><em>Data Definition Language - Veri Tanımlama Dili</em></h3>
+        <p>
+            <b>Create: </b> Yeni veritabanı nesnelerini oluşturmak için kullanılır. <br>
+            <b> Alter: </b> Veritabanı nesnelerini değiştirmek için kullanılır.<br>
+            <b> Drop: </b> Var olan bir veritabanı nesnesini silmek için kullanılır. <br>
+        </p>
+        <div class="code">
+            <div class="def">SQL</div>
+<pre class="pre">
+<span class="green">// Querry üzerinden Data Base oluşturma</span>
+CREATE DATABASE <span class="white">Test</span>
+GO
+
+<span class="green">// Querry üzerinden Data Base silme</span>
+DROP DATABASE <span class="white">Test</span>
+
+<span class="green">// Querry üzerinden Tablo Oluşturma</span>
+CREATE TABLE <span class="white">Employees</span>(
+    <span class="white">Id</span> İnt <span class="grey">NOT NULL</span>,
+    <span class="white">FirstName</span> nvarchar(25) <span class="grey">NOT NULL</span>,
+    <span class="white">LastName</span> nvarchar(25) <span class="grey">NOT NULL</span>,
+    <span class="white">Age</span> tinyint <span class="grey">NULL</span>
+)
+
+<span class="green">// Querry üzerinden Tablo Düzenleme</span>
+ALTER TABLE <span class="white">Employees</span>
+ADD <span class="white">[Description]</span> nvarchar(250) <span class="grey">NULL</span> <span class="green">// Kolon ekleme</span>
+</pre>
+        </div>
+</body>
+
+</html>
